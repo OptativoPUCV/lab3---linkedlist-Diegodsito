@@ -85,15 +85,18 @@ void pushFront(List * list, void * data) {
 }
 
 void pushBack(List * list, void * data) {
-  if(list == NULL) exit(EXIT_FAILURE);
-  if(list->tail == NULL)exit(EXIT_FAILURE);
-  
   Node * newNode = createNode(data);
-  list->current = list->tail;
-  list->current->next = newNode;
+  if(list->tail == NULL) {
+    list->head = newNode;
+    list->tail = newNode;
+    list->current = newNode;
+    return;
+  }
+  list->current = lastList(list);
   newNode->prev = list->current;
   list->current = newNode;
-  list->tail = newNode;
+  list->current->prev->next = list->current;
+  list->tail = list->current;
 }
 
 void pushCurrent(List * list, void * data) {
