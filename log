@@ -234,3 +234,9 @@ Fri 29 Mar 2024 10:39:57 PM UTC:
  tests:  9|0
    [ INFO ] Insertando 90 a la lista (pushfront)
 d403511
+Fri 29 Mar 2024 10:41:50 PM UTC: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+ tests:  9|0
+   [ INFO ] Insertando 68 a la lista (pushfront)
+f2e8b76
