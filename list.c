@@ -74,14 +74,11 @@ void pushFront(List * list, void * data) {
   if(list->head == NULL) {
     list->head = newNode;
     list->tail = newNode;
-    list->current = newNode;
     return;
   }
-  list->current = firstList(list);
-  newNode->next = list->current;
-  list->current = newNode;
-  list->current->next->prev = list->current;
-  list->head = list->current;
+  newNode->next = list->head;
+  list->head->prev = newNode;
+  list->head = newNode;
 }
 
 void pushBack(List * list, void * data) {
