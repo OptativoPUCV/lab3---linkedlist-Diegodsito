@@ -74,11 +74,14 @@ void pushFront(List * list, void * data) {
   if(list->head == NULL)exit(EXIT_FAILURE);
   
   Node * newNode = createNode(data);
-  list->current = list->head;
-  list->current->prev = newNode;
-  newNode->next = list->current;
+  while(list->current->next != NULL)
+    list->current = list->current->next;
+
+  Node * aux = list->current;
   list->current = newNode;
-  list->head = newNode;
+  list->current->next = aux;
+  list->current->next->prev = list->current;
+  list->head = list->current;
 }
 
 void pushBack(List * list, void * data) {
