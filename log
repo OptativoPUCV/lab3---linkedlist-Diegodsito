@@ -228,3 +228,9 @@ Fri 29 Mar 2024 10:38:46 PM UTC:
  tests:  9|3
 total_score: 35/70
 931c9c8
+Fri 29 Mar 2024 10:39:57 PM UTC: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+ tests:  9|0
+   [ INFO ] Insertando 90 a la lista (pushfront)
+d403511
