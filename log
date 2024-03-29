@@ -1,0 +1,14 @@
+Fri 29 Mar 2024 09:42:50 PM UTC: 
+ list.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:37:13: error: expected expression before ‘List’
+   37 |      return List;
+      |             ^~~~
+list.c:38:1: error: control reaches end of non-void function [-Werror=return-type]
+   38 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+ff95e12
