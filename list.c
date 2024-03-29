@@ -77,10 +77,7 @@ void pushFront(List * list, void * data) {
     list->current = newNode;
     return;
   }
-  
-  while(list->current->next != NULL){
-    list->current = list->current->next;
-  }
+  list->current = firstList(list);
   Node * aux = list->current;
   list->current = newNode;
   list->current->next = aux;
