@@ -174,3 +174,8 @@ Fri 29 Mar 2024 10:21:18 PM UTC:
  tests:  9|0
    [ INFO ] Insertando 8 a la lista (pushfront)
 35be71e
+Fri 29 Mar 2024 10:24:01 PM UTC: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|0
+32fbcc6
