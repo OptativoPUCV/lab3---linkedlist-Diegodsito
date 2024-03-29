@@ -130,3 +130,8 @@ Fri 29 Mar 2024 10:10:29 PM UTC:
  tests:  9|0
    [ INFO ] Insertando 43 a la lista (pushfront)
 f058caa
+Fri 29 Mar 2024 10:14:57 PM UTC: 
+ list.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+ tests:  0|0
+61f0d31
