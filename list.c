@@ -60,7 +60,7 @@ void * lastList(List * list) {
 }
 
 void * prevList(List * list) {
-
+  return NULL;
 }
 
 void pushFront(List * list, void * data) {
