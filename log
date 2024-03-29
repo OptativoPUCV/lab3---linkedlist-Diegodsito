@@ -168,3 +168,9 @@ list.c:72:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 c6bbe23
+Fri 29 Mar 2024 10:21:18 PM UTC: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+ tests:  9|0
+   [ INFO ] Insertando 8 a la lista (pushfront)
+35be71e
